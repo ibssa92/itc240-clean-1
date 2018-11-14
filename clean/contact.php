@@ -1,3 +1,4 @@
+<?php include 'config.php'?>
 <?php include 'header.php'?>
 <?php
 if(isset($_POST['Name'])){// show data
