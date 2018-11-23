@@ -36,10 +36,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="db-test.php">Database</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="daily.php">Daily</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="reservations.php">Reservations</a>
@@ -59,8 +62,8 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+              <h1><?=$siteName?></h1>
+              <span class="subheading"><?=$slogan?></span>
             </div>
           </div>
         </div>
@@ -72,7 +75,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
         <div class="page-heading">
-              <h1>Page Heading Goes Here!</h1>
-              <span class="subheading">Clever comment here!</span>
+              <h1><?=$pageHeader?></h1>
+              <span class="subheading"><?=$subHeader?></span>
         </div>
           <!-- header ends here -->
