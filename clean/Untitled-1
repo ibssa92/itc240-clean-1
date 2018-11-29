@@ -1,0 +1,7 @@
+<?php
+//credentials.php
+
+define('DB_NAME','horsey01');
+define('DB_USER','horsey01');
+define('DB_PASSWORD','XXXXXX');
+define('DB_HOST','localhost');

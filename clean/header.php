@@ -20,6 +20,15 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+      
+     <style>
+    /*
+         add a bit of color to the current/active page    
+    */    
+        #mainNav .navbar-nav>li.nav-item>a.active{
+            color:yellow;   
+        }
+    </style>
 
   </head>
 
@@ -35,11 +44,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <?=makeLinks($nav1);?>
+            <!--
             <li class="nav-item">
-              <a class="nav-link" href="index.php">Home</a>
+              <a class="nav-link active" href="index.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="db-test.php">Database</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jordan_list.php">Jordans</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="daily.php">Daily</a>
@@ -50,6 +64,7 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
             </li>
+            -->
           </ul>
         </div>
       </div>

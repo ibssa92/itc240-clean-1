@@ -25,6 +25,7 @@ if(isset($_POST['Name'])){// show data
 }else{// show form
     echo '
           <form action="" method="post" name="sentMessage" id="contactForm" novalidate>
+          
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Name</label>
@@ -40,7 +41,7 @@ if(isset($_POST['Name'])){// show data
                 <p class="help-block text-danger"></p>
               </div>
             </div>
-            </div>
+            
             
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
@@ -49,6 +50,7 @@ if(isset($_POST['Name'])){// show data
                 <p class="help-block text-danger"></p>
               </div>
             </div>
+            
             <br>
             <div id="success"></div>
             <div class="form-group">

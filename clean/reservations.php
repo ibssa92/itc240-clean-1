@@ -1,3 +1,4 @@
+<?php include 'config.php'?>
 <?php include 'header.php'?>
 <?php
 if(isset($_POST['Name'])){// show data
@@ -23,7 +24,7 @@ if(isset($_POST['Name'])){// show data
     
 }else{// show form
     echo '
-          <form action="" method="post" name="sentMessage" id="contactForm" novalidate>
+           <form action="" method="post" name="sentMessage" id="contactForm" novalidate>
           
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
@@ -40,28 +41,27 @@ if(isset($_POST['Name'])){// show data
                 <p class="help-block text-danger"></p>
               </div>
             </div>
-            </div>
+           
             
-            <label>Reservation Times</label>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
-        <ul>
-            <li>
-        <input type="radio" class="form-control" name="time" value="seven"> 7pm
-            </li>
-            <li>
-        <input type="radio" class="form-control" name="time" value="eight"> 8pm
-            </li>
-        </ul>
+                <label>Reservation Times</label>
+                <ul>
+                    <li>
+                <input type="radio" class="form-control" name="time" value="seven"> 7pm
+                    </li>
+                    <li>
+                <input type="radio" class="form-control" name="time" value="eight"> 8pm
+                    </li>
+                </ul>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
-            </div>
-
             
-        <label>Reservation Date</label>
+
         <div class="control-group">
         <div class="form-group floating-label-form-group controls">
+        <label>Reservation Date</label>
         <ul>
         <li>
         <input type="checkbox" class="form-control" name="date" value="june3"> June 3rd
@@ -76,7 +76,7 @@ if(isset($_POST['Name'])){// show data
             <p class="help-block text-danger"></p>
               </div>
             </div>
-            </div>
+            
             
             
             <div class="control-group">
